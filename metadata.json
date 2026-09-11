@@ -1,0 +1,6 @@
+{
+  "name": "Industrial Equipment Manufacturer",
+  "description": "Reliable industrial equipment and machinery for manufacturing, fabrication, packaging, material handling, and other industrial applications across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
