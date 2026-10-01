@@ -14,6 +14,25 @@
     gtag('config', 'AW-18396188223');
   </script>
   <meta name="google-site-verification" content="EMaewbE2iQsBmMIqwf5kwEAJyqSqz70ph3MMSBeYVEM" />
+  <!-- Google tag (gtag.js) event - delayed navigation helper -->
+  <script>
+    // Helper function to delay opening a URL until a gtag event is sent.
+    // Call it in response to an action that should navigate to a URL.
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'ads_conversion_phone_call_lead', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+        // <event_parameters>
+      });
+      return false;
+    }
+  </script>
+
   <title>Industrial Equipment & Machinery Manufacturer in India</title>
   <meta name="description"
     content="Reliable industrial equipment and machinery for manufacturing, fabrication, packaging, material handling, and other industrial applications across India." />
